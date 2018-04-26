@@ -31,7 +31,7 @@ import base64
 
 def _get_md5(content):
     m = hashlib.md5()
-    m.update(bytearray(content, "utf-8"))
+    m.update(content)
     return m.digest()
 
 
